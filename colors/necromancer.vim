@@ -46,9 +46,9 @@ hi NonText      guifg=#404050 guibg=NONE    gui=NONE
 
 " completions
 hi Pmenu        guifg=#A8A8A8 guibg=#3A3A3A
-hi PmenuSel     guifg=#000000 guibg=#537CA2
-hi PmenuSbar    guifg=#000000 guibg=#537CA2
-hi PmenuThumb   guifg=#000000 guibg=#537CA2
+hi PmenuSel     guifg=#000000 guibg=#458397
+hi PmenuSbar    guifg=#000000 guibg=#458397
+hi PmenuThumb   guifg=#000000 guibg=#458397
 
 hi Question     guifg=#00ee00 guibg=NONE    gui=bold
 hi Search       guifg=#000000 guibg=#d6e770 gui=bold
@@ -64,11 +64,11 @@ hi VertSplit    guifg=#404c4c guibg=#404c4c gui=NONE
 hi TabLine      guifg=fg      guibg=#d3d3d3 gui=underline
 hi TabLineFill  guifg=fg      guibg=NONE    gui=reverse
 hi TabLineSel   guifg=fg      guibg=NONE    gui=bold
-hi Title        guifg=#537CA2 guibg=NONE    gui=bold
+hi Title        guifg=#458397 guibg=NONE    gui=bold
 hi Visual       guifg=#000000 guibg=#6688aa gui=NONE
 hi WarningMsg   guifg=#ee9a00 guibg=NONE    gui=NONE
 hi WildMenu     guifg=#000000 guibg=#87ceeb gui=NONE
-hi ExtraWhitespace guifg=fg   guibg=#537CA2 gui=NONE
+hi ExtraWhitespace guifg=fg   guibg=#458397 gui=NONE
 
 "  syntax highlighting
 hi Comment      guifg=#ae4c5e gui=italic
@@ -82,7 +82,7 @@ hi Keyword      guifg=#90b0d1 gui=NONE
 hi Constant     guifg=#ff9800 gui=NONE
 hi Number       guifg=#FF8749 gui=NONE
 hi Special      guifg=#719611 gui=NONE
-hi PreProc      guifg=#537CA2 gui=NONE
+hi PreProc      guifg=#458397 gui=NONE
 hi Todo         guifg=#8f6f8f guibg=#202020 gui=italic,underline,bold
 
 " diff
