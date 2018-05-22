@@ -80,7 +80,7 @@ hi Type         guifg=#7271A1 gui=NONE
 hi Statement    guifg=#90b0d1 gui=NONE
 hi Keyword      guifg=#90b0d1 gui=NONE
 hi Constant     guifg=#ff9800 gui=NONE
-hi Number       guifg=#cc8800 gui=NONE
+hi Number       guifg=#FF8749 gui=NONE
 hi Special      guifg=#719611 gui=NONE
 hi PreProc      guifg=#537CA2 gui=NONE
 hi Todo         guifg=#8f6f8f guibg=#202020 gui=italic,underline,bold
