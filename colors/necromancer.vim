@@ -71,7 +71,7 @@ hi WildMenu     guifg=#000000 guibg=#87ceeb gui=NONE
 hi ExtraWhitespace guifg=fg   guibg=#528b8b gui=NONE
 
 "  syntax highlighting
-hi Comment      guifg=#ef5981 gui=italic
+hi Comment      guifg=#ae4c5e gui=italic
 hi Boolean      guifg=#ff9800 gui=NONE
 hi String       guifg=#779b70 gui=NONE
 hi Identifier   guifg=#9ebac2 gui=NONE
