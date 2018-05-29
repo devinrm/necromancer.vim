@@ -106,6 +106,7 @@ hi link             diffComment     Constant
 " ruby
 hi rubyDefine guifg=#7e7e7e gui=NONE
 hi rspecGroupMethods guifg=#7e7e7e gui=NONE
+hi rubyViewHelper guifg=#7e7e7e gui=NONE
 
 " javascript
 hi jsStorageClass guifg=#7e7e7e gui=NONE
