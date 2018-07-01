@@ -22,13 +22,18 @@ endif
 
 let g:colors_name = 'necromancer'
 
+augroup necroCursor
+  autocmd!
+  autocmd WinLeave * set nocursorline
+  autocmd WinEnter * set cursorline
+augroup END
 
 "  █▓▒░ GUI colors
-hi Normal       guifg=#c2c2b0 guibg=#222222 gui=NONE
+hi Normal       guifg=#c2c2b0 guibg=#282828 gui=NONE
 hi ColorColumn  guifg=NONE    guibg=#1c1c1c
 hi Cursor       guifg=NONE    guibg=#626262 gui=NONE
-hi CursorColumn guibg=#2d2d2d
-hi CursorLine   guibg=#2d2d2d
+hi CursorColumn guibg=#282828
+hi CursorLine   guibg=#282828
 hi DiffAdd      guifg=#000000 guibg=#3cb371 gui=NONE
 hi DiffDelete   guifg=#000000 guibg=#aa4450 gui=NONE
 hi DiffChange   guifg=#000000 guibg=#4f94cd gui=NONE
@@ -38,8 +43,8 @@ hi ErrorMsg     guifg=#ff6a6a guibg=NONE    gui=bold
 hi FoldColumn   guifg=#68838b guibg=#4B4B4B gui=bold
 hi Folded       guifg=#406060 guibg=#232c2c gui=NONE
 hi IncSearch    guifg=#ffffff guibg=#ff4500 gui=bold
-hi LineNr       guifg=#878787 guibg=#3A3A3A gui=NONE
-hi MatchParen   guifg=#ae4c5e guibg=NONE    gui=bold
+hi LineNr       guifg=#878787 guibg=#282828 gui=NONE
+hi MatchParen   guifg=#ff6a6a guibg=NONE    gui=bold
 hi ModeMsg      guifg=#afafaf guibg=#222222 gui=bold
 hi MoreMsg      guifg=#2e8b57 guibg=NONE    gui=bold
 hi NonText      guifg=#404050 guibg=NONE    gui=NONE
@@ -74,7 +79,7 @@ hi ExtraWhitespace guifg=fg   guibg=#458397 gui=NONE
 hi Comment      guifg=#ae4c5e gui=italic
 hi Boolean      guifg=#ff9800 gui=NONE
 hi String       guifg=#779b70 gui=NONE
-hi Identifier   guifg=#9ebac2 gui=NONE
+hi Identifier   guifg=#9eaacf gui=NONE
 hi Function     guifg=#faf4c6 gui=NONE
 hi Type         guifg=#7271A1 gui=NONE
 hi Statement    guifg=#90b0d1 gui=NONE
@@ -103,20 +108,12 @@ hi link             diffNoEOL       Constant
 hi link             diffCommon      Constant
 hi link             diffComment     Constant
 
-" ruby
-hi rubyDefine guifg=#7e7e7e gui=NONE
-hi rspecGroupMethods guifg=#7e7e7e gui=NONE
-hi rubyViewHelper guifg=#7e7e7e gui=NONE
-
-" javascript
-hi jsStorageClass guifg=#7e7e7e gui=NONE
-
 "  █▓▒░ 256 colors
 hi Normal                 cterm=NONE             ctermbg=NONE  ctermfg=145
 hi ColorColumn            cterm=NONE             ctermbg=16    ctermfg=NONE
 hi Cursor                 cterm=NONE             ctermbg=241   ctermfg=fg
-hi CursorColumn           cterm=NONE             ctermbg=16    ctermfg=fg
-hi CursorLine             cterm=NONE             ctermbg=236   ctermfg=fg
+hi CursorColumn           cterm=NONE             ctermbg=237    ctermfg=fg
+hi CursorLine             cterm=NONE             ctermbg=237   ctermfg=fg
 hi DiffAdd                cterm=NONE             ctermbg=71    ctermfg=16
 hi DiffDelete             cterm=NONE             ctermbg=124   ctermfg=16
 hi DiffChange             cterm=NONE             ctermbg=68    ctermfg=16
@@ -218,3 +215,15 @@ hi Pmenu                  cterm=NONE             ctermfg=248   ctermbg=237
 hi PmenuSel               cterm=NONE             ctermfg=16    ctermbg=66
 hi PmenuSbar              cterm=NONE             ctermfg=16    ctermbg=66
 hi PmenuThumb             cterm=NONE             ctermfg=16    ctermbg=66
+
+" ruby
+hi rubyDefine guifg=#7e7e7e gui=NONE
+hi rspecGroupMethods guifg=#7e7e7e gui=NONE
+hi rubyViewHelper guifg=#7e7e7e gui=NONE
+
+" javascript
+hi jsStorageClass guifg=#7e7e7e gui=NONE
+
+" ALE
+highlight ALEWarningSign ctermbg=237 guibg='#282828' guifg='#7271a1'
+highlight ALEErrorSign ctermbg=237 guibg='#282828' guifg='#7271a1'
