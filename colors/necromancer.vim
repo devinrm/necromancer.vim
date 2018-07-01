@@ -258,4 +258,3 @@ let s:p.tabline.right = copy(s:p.normal.right)
 let s:p.normal.error = [ [ s:background_black, s:purple ] ]
 let s:p.normal.warning = [ [ s:pink, s:gray_tint_one ] ]
 let g:lightline#colorscheme#necromancer#palette = lightline#colorscheme#flatten(s:p)
-
