@@ -219,8 +219,8 @@ hi rubyViewHelper guifg=#7e7e7e gui=NONE
 hi jsStorageClass guifg=#7e7e7e gui=NONE
 
 " ALE
-highlight ALEWarningSign ctermbg=237 guibg='#282828' guifg='#7271a1'
-highlight ALEErrorSign ctermbg=237 guibg='#282828' guifg='#7271a1'
+hi ALEWarningSign ctermbg=237 guibg=#282828 guifg=#7271a1
+hi ALEErrorSign ctermbg=237 guibg=#282828 guifg=#7271a1
 
 " lightline
 let s:background_black =  [ '#282828', 0   ]
