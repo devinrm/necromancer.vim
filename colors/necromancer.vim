@@ -22,12 +22,6 @@ endif
 
 let g:colors_name = 'necromancer'
 
-augroup necroCursor
-  autocmd!
-  autocmd WinLeave * set nocursorline
-  autocmd WinEnter * set cursorline
-augroup END
-
 "  █▓▒░ GUI colors
 hi Normal       guifg=#c2c2b0 guibg=#282828 gui=NONE
 hi ColorColumn  guifg=NONE    guibg=#1c1c1c
