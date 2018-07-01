@@ -28,6 +28,7 @@ hi ColorColumn  guifg=NONE    guibg=#1c1c1c
 hi Cursor       guifg=NONE    guibg=#626262 gui=NONE
 hi CursorColumn guibg=#282828
 hi CursorLine   guibg=#282828
+hi CursorLineNr guifg=#ae4c5e
 hi DiffAdd      guifg=#000000 guibg=#3cb371 gui=NONE
 hi DiffDelete   guifg=#000000 guibg=#aa4450 gui=NONE
 hi DiffChange   guifg=#000000 guibg=#4f94cd gui=NONE
@@ -38,7 +39,7 @@ hi FoldColumn   guifg=#68838b guibg=#4B4B4B gui=bold
 hi Folded       guifg=#406060 guibg=#232c2c gui=NONE
 hi IncSearch    guifg=#ffffff guibg=#ff4500 gui=bold
 hi LineNr       guifg=#878787 guibg=#282828 gui=NONE
-hi MatchParen   guifg=#ff6a6a guibg=NONE    gui=bold
+hi MatchParen   guifg=#1e90ff guibg=NONE    gui=bold
 hi ModeMsg      guifg=#afafaf guibg=#222222 gui=bold
 hi MoreMsg      guifg=#2e8b57 guibg=NONE    gui=bold
 hi NonText      guifg=#404050 guibg=NONE    gui=NONE
