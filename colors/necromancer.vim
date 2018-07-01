@@ -213,6 +213,7 @@ hi PmenuThumb             cterm=NONE             ctermfg=16    ctermbg=66
 
 " ruby
 hi rubyDefine guifg=#7e7e7e gui=NONE
+hi rubyLocalVariableOrMethod guifg=#7e7e7e gui=NONE
 hi rspecGroupMethods guifg=#7e7e7e gui=NONE
 hi rubyViewHelper guifg=#7e7e7e gui=NONE
 
