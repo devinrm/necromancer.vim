@@ -59,8 +59,8 @@ hi SpellCap     guisp=#0000ff gui=undercurl
 hi SpellLocal   guisp=#008b8b gui=undercurl
 hi SpellRare    guisp=#ff00ff gui=undercurl
 hi StatusLine   guifg=#000000 guibg=#808070 gui=bold
-hi StatusLineNC guifg=#000000 guibg=#404c4c gui=italic
-hi VertSplit    guifg=#404c4c guibg=#404c4c gui=NONE
+hi StatusLineNC guifg=#000000 guibg=#666656 gui=italic
+hi VertSplit    guifg=#282828 guibg=#282828 gui=NONE
 hi TabLine      guifg=fg      guibg=#d3d3d3 gui=underline
 hi TabLineFill  guifg=fg      guibg=NONE    gui=reverse
 hi TabLineSel   guifg=fg      guibg=NONE    gui=bold
