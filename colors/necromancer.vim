@@ -29,7 +29,7 @@ hi Cursor       guifg=NONE    guibg=#626262 gui=NONE
 hi CursorColumn guibg=#282828
 hi CursorLine   guibg=#282828
 hi CursorLineNr guifg=#ae4c5e
-hi DiffAdd      guifg=#000000 guibg=#3cb371 gui=NONE
+hi DiffAdd      guifg=#ffffff guibg=#3cb371 gui=NONE
 hi DiffDelete   guifg=#000000 guibg=#aa4450 gui=NONE
 hi DiffChange   guifg=#000000 guibg=#4f94cd gui=NONE
 hi DiffText     guifg=#000000 guibg=#8ee5ee gui=NONE
