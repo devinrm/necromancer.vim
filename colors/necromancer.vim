@@ -20,6 +20,8 @@ if exists('syntax_on')
   syntax reset
 endif
 
+set termguicolors
+
 let g:colors_name = 'necromancer'
 
 "  █▓▒░ GUI colors
