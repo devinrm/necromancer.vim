@@ -22,6 +22,26 @@ endif
 
 let g:colors_name = 'necromancer'
 
+" === nvim :terminal colors ===
+if has("nvim") && (has("gui_running") || &termguicolors)
+  let g:terminal_color_0  = '#25272c'
+  let g:terminal_color_1  = '#ba2a2a'
+  let g:terminal_color_2  = '#008542'
+  let g:terminal_color_3  = '#eac06e'
+  let g:terminal_color_4  = '#7e8aa2'
+  let g:terminal_color_5  = '#8d4888'
+  let g:terminal_color_6  = '#006596'
+  let g:terminal_color_7  = '#53586f'
+  let g:terminal_color_8  = '#354151'
+  let g:terminal_color_9  = '#c95f5f'
+  let g:terminal_color_10 = '#73ba25'
+  let g:terminal_color_11 = '#f07d30'
+  let g:terminal_color_12 = '#81a3cf'
+  let g:terminal_color_13 = '#e35682'
+  let g:terminal_color_14 = '#25b8a5'
+  let g:terminal_color_15 = '#f6f9fc'
+endif
+
 "  █▓▒░ GUI colors
 hi Normal       guifg=#c2c2b0 guibg=#282828 gui=NONE
 hi ColorColumn  guifg=NONE    guibg=#1c1c1c
@@ -103,123 +123,15 @@ hi link             diffNoEOL       Constant
 hi link             diffCommon      Constant
 hi link             diffComment     Constant
 
-"  █▓▒░ 256 colors
-hi Normal                 cterm=NONE             ctermbg=NONE  ctermfg=145
-hi ColorColumn            cterm=NONE             ctermbg=16    ctermfg=NONE
-hi Cursor                 cterm=NONE             ctermbg=241   ctermfg=fg
-hi CursorColumn           cterm=NONE             ctermbg=237    ctermfg=fg
-hi CursorLine             cterm=NONE             ctermbg=237   ctermfg=fg
-hi DiffAdd                cterm=NONE             ctermbg=71    ctermfg=16
-hi DiffDelete             cterm=NONE             ctermbg=124   ctermfg=16
-hi DiffChange             cterm=NONE             ctermbg=68    ctermfg=16
-hi DiffText               cterm=NONE             ctermbg=117   ctermfg=16
-hi Directory              cterm=NONE             ctermbg=234   ctermfg=33
-hi ErrorMsg               cterm=bold             ctermbg=NONE  ctermfg=203
-hi FoldColumn             cterm=bold             ctermbg=239   ctermfg=66
-hi Folded                 cterm=NONE             ctermbg=16    ctermfg=60
-hi IncSearch              cterm=bold             ctermbg=202   ctermfg=231
-hi LineNr                 cterm=NONE             ctermbg=237   ctermfg=102
-hi MatchParen             cterm=bold             ctermbg=NONE  ctermfg=231
-hi ModeMsg                cterm=bold             ctermbg=NONE  ctermfg=145
-hi MoreMsg                cterm=bold             ctermbg=234   ctermfg=29
-hi NonText                cterm=NONE             ctermbg=NONE  ctermfg=59
-hi Pmenu                  cterm=NONE             ctermbg=238   ctermfg=231
-hi PmenuSbar              cterm=NONE             ctermbg=250   ctermfg=fg
-hi PmenuSel               cterm=NONE             ctermbg=149   ctermfg=16
-hi Question               cterm=bold             ctermbg=NONE  ctermfg=46
-hi Search                 cterm=bold             ctermbg=185   ctermfg=16
-hi SignColumn             cterm=NONE             ctermbg=NONE  ctermfg=231
-hi SpecialKey             cterm=NONE             ctermbg=NONE  ctermfg=59
-hi SpellBad               cterm=undercurl        ctermbg=NONE  ctermfg=196
-hi SpellCap               cterm=undercurl        ctermbg=NONE  ctermfg=21
-hi SpellLocal             cterm=undercurl        ctermbg=NONE  ctermfg=30
-hi SpellRare              cterm=undercurl        ctermbg=NONE  ctermfg=201
-hi StatusLine             cterm=bold             ctermbg=101   ctermfg=16
-hi StatusLineNC           cterm=NONE             ctermbg=102   ctermfg=16
-hi VertSplit              cterm=NONE             ctermbg=102   ctermfg=102
-hi TabLine                cterm=bold             ctermbg=102   ctermfg=16
-hi TabLineFill            cterm=NONE             ctermbg=102   ctermfg=16
-hi TabLineSel             cterm=bold             ctermbg=16    ctermfg=59
-hi Title                  cterm=bold             ctermbg=NONE  ctermfg=66
-hi Visual                 cterm=NONE             ctermbg=67    ctermfg=16
-hi WarningMsg             cterm=NONE             ctermbg=234   ctermfg=208
-hi WildMenu               cterm=NONE             ctermbg=116   ctermfg=16
-hi ExtraWhitespace        cterm=NONE             ctermbg=66    ctermfg=fg
-
-hi Comment                cterm=NONE             ctermbg=NONE  ctermfg=59
-hi Boolean                cterm=NONE             ctermbg=NONE  ctermfg=208
-hi String                 cterm=NONE             ctermbg=NONE  ctermfg=101
-hi Identifier             cterm=NONE             ctermbg=NONE  ctermfg=145
-hi Function               cterm=NONE             ctermbg=NONE  ctermfg=230
-hi Type                   cterm=NONE             ctermbg=NONE  ctermfg=103
-hi Statement              cterm=NONE             ctermbg=NONE  ctermfg=110
-hi Keyword                cterm=NONE             ctermbg=NONE  ctermfg=110
-hi Constant               cterm=NONE             ctermbg=NONE  ctermfg=208
-hi Number                 cterm=NONE             ctermbg=NONE  ctermfg=172
-hi Special                cterm=NONE             ctermbg=NONE  ctermfg=64
-hi PreProc                cterm=NONE             ctermbg=NONE  ctermfg=66
-hi Todo                   cterm=bold,underline   ctermbg=234   ctermfg=96
-
-hi diffOldFile            cterm=NONE             ctermbg=NONE  ctermfg=67
-hi diffNewFile            cterm=NONE             ctermbg=NONE  ctermfg=67
-hi diffFile               cterm=NONE             ctermbg=NONE  ctermfg=67
-hi diffLine               cterm=NONE             ctermbg=NONE  ctermfg=67
-hi diffAdded              cterm=NONE             ctermfg=NONE  ctermfg=71
-hi diffRemoved            cterm=NONE             ctermfg=NONE  ctermfg=124
-hi diffChanged            cterm=NONE             ctermfg=NONE  ctermfg=68
-hi link             diffSubname     diffLine
-hi link             diffOnly        Constant
-hi link             diffIdentical   Constant
-hi link             diffDiffer      Constant
-hi link             diffBDiffer     Constant
-hi link             diffIsA         Constant
-hi link             diffNoEOL       Constant
-hi link             diffCommon      Constant
-hi link             diffComment     Constant
-
-hi pythonClass            cterm=NONE             ctermbg=NONE  ctermfg=fg
-hi pythonDecorator        cterm=NONE             ctermbg=NONE  ctermfg=101
-hi pythonExClass          cterm=NONE             ctermbg=NONE  ctermfg=95
-hi pythonException        cterm=NONE             ctermbg=NONE  ctermfg=110
-hi pythonFunc             cterm=NONE             ctermbg=NONE  ctermfg=fg
-hi pythonFuncParams       cterm=NONE             ctermbg=NONE  ctermfg=fg
-hi pythonKeyword          cterm=NONE             ctermbg=NONE  ctermfg=fg
-hi pythonParam            cterm=NONE             ctermbg=NONE  ctermfg=fg
-hi pythonRawEscape        cterm=NONE             ctermbg=NONE  ctermfg=fg
-hi pythonSuperclasses     cterm=NONE             ctermbg=NONE  ctermfg=fg
-hi pythonSync             cterm=NONE             ctermbg=NONE  ctermfg=fg
-
-hi Conceal                cterm=NONE             ctermbg=248   ctermfg=252
-hi Error                  cterm=NONE             ctermbg=196   ctermfg=231
-hi Ignore                 cterm=NONE             ctermbg=NONE  ctermfg=234
-hi InsertModeCursorLine   cterm=NONE             ctermbg=16    ctermfg=fg
-hi NormalModeCursorLine   cterm=NONE             ctermbg=235   ctermfg=fg
-hi PmenuThumb             cterm=reverse          ctermbg=NONE  ctermfg=fg
-hi StatusLineAlert        cterm=NONE             ctermbg=160   ctermfg=231
-hi StatusLineUnalert      cterm=NONE             ctermbg=238   ctermfg=144
-hi Test                   cterm=NONE             ctermbg=NONE  ctermfg=fg
-hi Underlined             cterm=underline        ctermbg=NONE  ctermfg=111
-hi VisualNOS              cterm=bold,underline   ctermbg=NONE  ctermfg=fg
-hi cCursor                cterm=reverse          ctermbg=NONE  ctermfg=fg
-hi iCursor                cterm=NONE             ctermbg=210   ctermfg=16
-hi lCursor                cterm=NONE             ctermbg=145   ctermfg=234
-hi nCursor                cterm=NONE             ctermbg=NONE  ctermfg=145
-hi vCursor                cterm=NONE             ctermbg=201   ctermfg=16
-
-hi Pmenu                  cterm=NONE             ctermfg=248   ctermbg=237
-hi PmenuSel               cterm=NONE             ctermfg=16    ctermbg=66
-hi PmenuSbar              cterm=NONE             ctermfg=16    ctermbg=66
-hi PmenuThumb             cterm=NONE             ctermfg=16    ctermbg=66
-
 " ruby
-hi rubyDefine guifg=#7e7e7e gui=NONE
+hi rubyDefine                guifg=#7e7e7e gui=NONE
 hi rubyLocalVariableOrMethod guifg=#7e7e7e gui=NONE
-hi rspecGroupMethods guifg=#7e7e7e gui=NONE
-hi rubyViewHelper guifg=#7e7e7e gui=NONE
+hi rspecGroupMethods         guifg=#7e7e7e gui=NONE
+hi rubyViewHelper            guifg=#7e7e7e gui=NONE
 
 " javascript
-hi jsStorageClass guifg=#7e7e7e gui=NONE
+hi jsStorageClass            guifg=#7e7e7e gui=NONE
 
 " ALE
-hi ALEWarningSign ctermbg=237 guibg=#282828 guifg=#7271a1
-hi ALEErrorSign ctermbg=237 guibg=#282828 guifg=#7271a1
+hi ALEWarningSign            guibg=#282828 guifg=#7271a1
+hi ALEErrorSign              guibg=#282828 guifg=#7271a1
