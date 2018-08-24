@@ -135,3 +135,8 @@ hi jsStorageClass            guifg=#7e7e7e gui=NONE
 " ALE
 hi ALEWarningSign            guibg=#282828 guifg=#7271a1
 hi ALEErrorSign              guibg=#282828 guifg=#7271a1
+
+" statusline
+highlight! User1 guifg=#4e4e4e guibg=#666666 gui=BOLD
+highlight! User2 guifg=#4e4e4e guibg=#666666
+highlight! User3 guifg=#4e4e4e guibg=#282828
