@@ -106,22 +106,10 @@ hi PreProc      guifg=#458397 gui=NONE
 hi Todo         guifg=#8f6f8f guibg=#202020 gui=italic,underline,bold
 
 " diff
-hi diffOldFile      guifg=#88afcb   guibg=NONE      gui=italic
-hi diffNewFile      guifg=#88afcb   guibg=NONE      gui=italic
-hi diffFile         guifg=#88afcb   guibg=NONE      gui=italic
-hi diffLine         guifg=#88afcb   guibg=NONE      gui=italic
-hi link             diffSubname     diffLine
-hi diffAdded        guifg=#3cb371   guibg=NONE      gui=NONE
-hi diffRemoved      guifg=#aa4450   guibg=NONE      gui=NONE
-hi diffChanged      guifg=#4f94cd   guibg=NONE      gui=NONE
-hi link             diffOnly        Constant
-hi link             diffIdentical   Constant
-hi link             diffDiffer      Constant
-hi link             diffBDiffer     Constant
-hi link             diffIsA         Constant
-hi link             diffNoEOL       Constant
-hi link             diffCommon      Constant
-hi link             diffComment     Constant
+hi DiffAdd        guifg=#87af87 guibg=#262626 gui=reverse
+hi DiffChange     guifg=#8787af guibg=#262626 gui=reverse
+hi DiffDelete     guifg=#af5f5f guibg=#262626 gui=reverse
+hi DiffText       guifg=#ff8700 guibg=#262626 gui=reverse
 
 " ruby
 hi rubyDefine                guifg=#7e7e7e gui=NONE
