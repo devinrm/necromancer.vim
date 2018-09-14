@@ -43,12 +43,12 @@ if has("nvim") && (has("gui_running") || &termguicolors)
 endif
 
 "  █▓▒░ GUI colors
-hi Normal       guifg=#c2c2b0 guibg=#282828 gui=NONE
-hi ColorColumn  guifg=NONE    guibg=#1c1c1c
+hi Normal       guifg=#c2c2b0 guibg=#1c1c1c
+hi ColorColumn  guifg=NONE    guibg=#282828
 hi Cursor       guifg=NONE    guibg=#626262 gui=NONE
-hi CursorColumn guibg=#282828
-hi CursorLine   guibg=#282828
-hi CursorLineNr guifg=#ae4c5e
+hi CursorColumn guibg=#1c1c1c
+hi CursorLine   guibg=#1c1c1c
+hi CursorLineNr guifg=#c6c6c6
 hi DiffAdd      guifg=#ffffff guibg=#3cb371 gui=NONE
 hi DiffDelete   guifg=#ffffff guibg=#aa4450 gui=NONE
 hi DiffChange   guifg=#ffffff guibg=#4f94cd gui=NONE
@@ -58,7 +58,7 @@ hi ErrorMsg     guifg=#ff6a6a guibg=NONE    gui=bold
 hi FoldColumn   guifg=#68838b guibg=#4B4B4B gui=bold
 hi Folded       guifg=#406060 guibg=#232c2c gui=NONE
 hi IncSearch    guifg=#ffffff guibg=#ff4500 gui=bold
-hi LineNr       guifg=#878787 guibg=#282828 gui=NONE
+hi LineNr       guifg=#878787 guibg=#1c1c1c gui=NONE
 hi MatchParen   guifg=#ffffff guibg=NONE    gui=bold
 hi ModeMsg      guifg=#afafaf guibg=#222222 gui=bold
 hi MoreMsg      guifg=#2e8b57 guibg=NONE    gui=bold
@@ -80,7 +80,7 @@ hi SpellLocal   guisp=#008b8b gui=undercurl
 hi SpellRare    guisp=#ff00ff gui=undercurl
 hi StatusLine   guifg=#000000 guibg=#808070 gui=bold
 hi StatusLineNC guifg=#000000 guibg=#666656 gui=italic
-hi VertSplit    guifg=#282828 guibg=#282828 gui=NONE
+hi VertSplit    guifg=#1c1c1c guibg=#1c1c1c gui=NONE
 hi TabLine      guifg=fg      guibg=#d3d3d3 gui=underline
 hi TabLineFill  guifg=fg      guibg=NONE    gui=reverse
 hi TabLineSel   guifg=fg      guibg=NONE    gui=bold
@@ -121,10 +121,10 @@ hi rubyViewHelper            guifg=#7e7e7e gui=NONE
 hi jsStorageClass            guifg=#7e7e7e gui=NONE
 
 " ALE
-hi ALEWarningSign            guibg=#282828 guifg=#7271a1
-hi ALEErrorSign              guibg=#282828 guifg=#7271a1
+hi ALEWarningSign            guibg=#1c1c1c guifg=#7271a1
+hi ALEErrorSign              guibg=#1c1c1c guifg=#7271a1
 
 " statusline
 highlight! User1 guifg=#4e4e4e guibg=#666666 gui=BOLD
 highlight! User2 guifg=#4e4e4e guibg=#666666
-highlight! User3 guifg=#4e4e4e guibg=#282828
+highlight! User3 guifg=#4e4e4e guibg=#1c1c1c
