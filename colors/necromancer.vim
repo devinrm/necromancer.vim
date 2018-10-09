@@ -124,6 +124,10 @@ hi jsStorageClass            guifg=#7e7e7e gui=NONE
 hi ALEWarningSign            guibg=#1c1c1c guifg=#7271a1
 hi ALEErrorSign              guibg=#1c1c1c guifg=#7271a1
 
+highlight! link TabLine Normal
+highlight! link TabLineFill Normal
+highlight! link TabLineSel Cursor
+
 " statusline
 highlight! User1 guifg=#4e4e4e guibg=#666666 gui=BOLD
 highlight! User2 guifg=#4e4e4e guibg=#666666
