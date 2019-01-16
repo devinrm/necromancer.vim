@@ -23,7 +23,7 @@ endif
 let g:colors_name = 'necromancer'
 
 " === nvim :terminal colors ===
-if has("nvim") && (has("gui_running") || &termguicolors)
+if has('nvim') && (has('gui_running') || &termguicolors)
   let g:terminal_color_0  = '#25272c'
   let g:terminal_color_1  = '#ba2a2a'
   let g:terminal_color_2  = '#008542'
@@ -123,6 +123,13 @@ hi jsStorageClass            guifg=#7e7e7e gui=NONE
 " ALE
 hi ALEWarningSign            guibg=#1c1c1c guifg=#7271a1
 hi ALEErrorSign              guibg=#1c1c1c guifg=#7271a1
+highlight! ALEVirtualTextError guifg=#a63038
+highlight! ALEVirtualTextWarning guifg=#a63038
+highlight! ALEVirtualTextInfo guifg=#a63038
+highlight! ALEVirtualTextStyleError guifg=#a63038
+highlight! ALEVirtualTextStyleWarning guifg=#a63038
+
+
 
 highlight! link TabLine Normal
 highlight! link TabLineFill Normal
