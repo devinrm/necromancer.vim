@@ -85,7 +85,7 @@ hi TabLine      guifg=fg      guibg=#d3d3d3 gui=underline
 hi TabLineFill  guifg=fg      guibg=NONE    gui=reverse
 hi TabLineSel   guifg=fg      guibg=NONE    gui=bold
 hi Title        guifg=#458397 guibg=NONE    gui=bold
-hi Visual       guibg=#2c323c               gui=NONE
+hi Visual       guifg=#000000 guibg=#6688aa gui=NONE
 hi WarningMsg   guifg=#ee9a00 guibg=NONE    gui=NONE
 hi WildMenu     guifg=#000000 guibg=#87ceeb gui=NONE
 hi ExtraWhitespace guifg=fg   guibg=#458397 gui=NONE
