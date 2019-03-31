@@ -47,8 +47,8 @@ hi Normal       guifg=#c2c2b0 guibg=#1c1c1c
 hi ColorColumn  guifg=NONE    guibg=#282828
 hi Cursor       guifg=NONE    guibg=#626262 gui=NONE
 hi CursorColumn guibg=#1c1c1c
-hi CursorLine   guibg=#1c1c1c
-hi CursorLineNr guifg=#c6c6c6
+hi CursorLine   guibg=#1c1c1c cterm=NONE
+hi CursorLineNr guifg=#c6c6c6 cterm=NONE
 hi DiffAdd      guifg=#ffffff guibg=#3cb371 gui=NONE
 hi DiffDelete   guifg=#ffffff guibg=#aa4450 gui=NONE
 hi DiffChange   guifg=#ffffff guibg=#4f94cd gui=NONE
